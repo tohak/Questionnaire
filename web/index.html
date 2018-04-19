@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Konovalov.com</title>
+    <style>
+        body{
+            background: url("java.jpg");
+            background-size: cover;
+        }
+        .bloc{
+            color: #fff;
+            padding: 20px;
+            width: 400px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    </style>
 </head>
 <body>
+<div class="bloc" >
 <form action="/question" method="POST">
-    <p>First name: <input type="text" name="name"></p>
+        <p>First name: <input type="text" name="name"></p>
     <p> Last name: <input type="text" name="lastName"></p><br><br>
     <p><b>Best programming launguage</b></p>
     <p><input name="launguage" type="radio" value="C++"> C++</p>
@@ -17,5 +30,6 @@
     <p><input name="compiler" type="radio" value="IntelliJ IDEA"> IntelliJ IDEA</p>
     <input type="submit">
 </form>
+</div>
 </body>
 </html>

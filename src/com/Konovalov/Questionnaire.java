@@ -31,8 +31,8 @@ public class Questionnaire extends HttpServlet {
         String lastName = req.getParameter("lastName");
         PrintWriter pw = resp.getWriter();
         if (st.addPerson(name, lastName)) {
-            String text="<b>You already voted</b><br>";
-            pw.println(String.format(TEMPLATE, text+st.toString()));
+            String text = "<b>You already voted</b><br>";
+            pw.println(String.format(TEMPLATE, text + st.toString()));
             pw.close();
         } else {
             String launguage = req.getParameter("launguage");
